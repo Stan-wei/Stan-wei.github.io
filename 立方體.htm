@@ -1,0 +1,62 @@
+<!doctype html>
+
+<style>
+	.cube>.center
+	{
+		height:240px;
+		width:240px;
+		background-color:green;
+		display:inline-block;
+	}
+	.cube>.top
+	{
+		height:60px;
+		width:240px;
+		background-color:black;
+		transform:skew(-45deg) translate(30px);
+		
+	}
+	.cube>.right
+	{
+		height:240px;
+		width:60px;
+		background-color:red;
+		display:inline-block;
+		transform:skew(0deg,-45deg) translate(0px,-30px);
+	}
+	.btn
+	{
+		height:50px;
+		width:80px;
+		margin-bottom:40px;
+	}
+	.dialog
+	{
+		text-align:center;
+		border:1px solid black;
+		padding:8px;
+		display:none;
+	}
+</style>
+
+<body>
+	<button class="btn" id="btn">聯絡資訊</button>
+	<div class="cube">
+		<div class="top"></div>
+		<div class="center"></div><div class="right"></div>		
+	</div>
+	<div class="dialog" id="dialog">加入對話框內容例如Email:test@test.com<span>dfdfsdf</span></div>
+
+<script>	
+	
+	var btn=document.getElementById("btn");
+
+	btn.addEventListener("click",function()
+	{		
+		var dialog=document.getElementById("dialog");
+		dialog.style.display="block";
+		
+		
+	})
+</script>
+</body>
